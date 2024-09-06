@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora 1</title>
+    <link rel="stylesheet" href="bitacora1.css">
+</head>
+
+<body>
+    <header>
+        <!--Encabezado-->
+        <h1>Bitácora #1</h1>
+    </header>
+
+    <nav class="navegacion">
+        <!--Navegación-->
+        <a href="#Temas1_1">Dia 1</a>
+        <a href="#Temas2_1">Dia 2</a>
+        <a href="#Temas3_1">Dia 3</a>
+        <a href="#Temas4_1">Dia 4</a>
+        <a href="#Temas5_1">Dia 5</a>
+        <a href="#Temas6_1">Dia 6</a>
+        <a href="#Temas7_1">Dia 7</a>
+
+        <a href="#">Inicio</a>
+    </nav>
+    <!--Secciones-->
+    <section id="secciones">
+
+        <!--Inicio de Temas 1-->
+        <section id="Temas1_1">
+
+            <div class="subtitulo">
+                <h2>Dia 1: 12 de agosto de 2024</h2>
+            </div>
+
+            <div class="contenidos">
+
+                <div class="contenido1">
+                    <h3>Notas de Clase:</h3>
+                    <div class="texto1">
+                        <h4>JavaScript:</h4>
+                        <p>
+                            JavaScript (abreviado comúnmente JS) es un lenguaje de programación orientado a objetos,
+                            dialecto estándar ECMAScript. Fue desarrollado originalmente por Brendan Eich de Netscape
+                            con el nombre de Mocha, posteriormente se le nombro LiveScript, y finalmente JavaScript. El
+                            cambio de nombre coincidió en que Netscape agrego compatibilidad con la tecnología Java en
+                            su navegador en diciembre de 1995, esto dio la impresión de que el lenguaje es una
+                            prolongación de Java, pero JavaScript y Java tienen semánticas y propósitos diferentes. <br>
+                            En 1997 los autores propusieron JavaScript para que fuera adoptado como estándar de la
+                            European Computer Manufactures Association ECMA. En junio de 1997, fue adoptado como un
+                            estándar ECMA, con nombre de ECMAScript y poco después también como un estándar ISO.
+                        </p>
+                        <h4>Uso</h4>
+                        <p>
+                            Se utiliza principalmente en su forma del lado del cliente (client-slide), implementado como
+                            parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web
+                            dinámicas, aunque existe una forma de JavaScript del lado del servidor conocido como
+                            Server-side JavaScript o SSJS. <br>Desde el 2012, todos los navegadores modernos soportan
+                            completamente ECMAScript 5.1, una versión de JavaScript, de hecho, los navegadores más
+                            antiguos soportan por lo menos ECMAScript 3.
+                        </p>
+                        <h4>Insertar JavaScript en HTML:</h4>
+                        <p>
+                            <b>Agregar JavaScript directamente a un archivo HTML</b> <br>
+                            Aquí se utilizan la etiqueta &#60;script&#62; &#60;/script&#62; y el código JS queda dentro
+                            de esta etiqueta.
+                            Esta etiqueta se colocar dentro de &#60;head&#62; o de &#60;body&#62;.
+                            Dependiendo de donde se agregue el código JS en el archivo HTML, la carga será
+                            diferente, por lo general se recomienda agregarlo en el &#60;head&#62; para que permanezca
+                            separado del contenido HTML. Sin embargo, colocarlo dentro de
+                            &#60;body&#62; puede ayudar a mejorar la velocidad de carga, ya que el contenido del sitio
+                            web
+                            carga más rápido y después de eso se procesa el JavaScript.
+                        </p>
+                        <p>
+                            <b>Agregar código JavaScript en un archivo separado.</b><br>
+                            Esta opción no siempre es la mejor, más cuando algunos escritos deben utilizarse en
+                            varias páginas. Aunque está bien mantener el código JS aparte y referenciarlo de la
+                            misma forma que los documentos CSS.
+                            Las ventajas de esto, es que cuando los códigos HTML y JS están separados, se cumple
+                            el principio de diseño de separación y que sea mucho más sostenible y reutilizable.
+                            También beneficia a la legibilidad y el mantenimiento del código, los archivos JS en
+                            cache mejoran el rendimiento general del sitio web al disminuir el tiempo que tardan
+                            las paginas en cargarse.
+                        </p>
+                        <h4>Metodo – getElelmentById()</h4>
+                        <p>
+                            Este método devuelve el elemento que tiene el atributo ID con el valor especificado. Es uno
+                            de
+                            los métodos más comunes en el DOM de HTML y se usa casi cada vez que se desea manipular u
+                            obtener información de un elemento de su documento. <br>
+                            Si no existen elementos con el ID especificado, entonces su devolución es nula. Además de
+                            que la
+                            identificación debe ser única dentro de una página, si existe más de un elemento con el
+                            mismo ID
+                            especificado, el método devuelve el primer elemento en el código fuente.
+                        </p>
+                        <h4>Variables:</h4>
+                        <p>
+                            Las variables de JS son contenedores para almacenar valores de datos.
+                            Todas las variables de JavaScript deben identificarse con nombres únicos
+                            Estos nombres únicos se llaman identificadores y pueden tener nombres cortos o mas
+                            descriptivos.
+                            <b>var, let y const</b> para crear variables.
+                        </p>
+                        <p>
+                            <b>var</b>, abreviatura de variable, es una palabra clave de JavaScript que crea, o declara
+                            una nueva variable:
+                        </p>
+                        <p>
+                            <ins>var edad = '20'; //para declarar la variable <br>
+                                edad //para llamar a la variable</ins>
+                        </p>
+                        <p>
+                            La palabra clave <b>let</b> indica que la variable se puede reasignar a un valor diferente.
+                            Debemos
+                            tener en cuenta al usar let (o var) que podemos declarar una variable sin asignar un valor a
+                            la
+                            variable. En tal caso, la variable se inicializa automáticamente con un valor de indefinido.
+                        </p>
+                        <p>
+                            <ins>let ComidaFavorita = ‘Menudo’;<br>
+                                ComidaFavorita; Menudo <br>
+                                ComidaFavorita = ‘Pozole’; <br>
+                                ComidaFavorita; Pozole <br></ins>
+                        </p>
+                        <p>
+                            La palabra clave <b>const</b> también se introdujo en ES6, y es la abreviatura de la palabra
+                            constante.
+                            Al igual que con var y le permite almacenar cualquier valor en una variable const. La forma
+                            en
+                            que declara una variable const y le asigna un valor sigue la misma estructura que let y var.
+                            <br>
+                            Una variable const no se puede reasignar porque es constante, si no, entonces sale un
+                            TypeError.
+                        </p>
+                        <p>
+                            <ins>const Platillo = ‘Enchiladas’;<br>
+                                console.log(Platillo); //Output: Enchiladas<br>
+                                Platillo = ‘Tacos’;<br>
+                                console.log(Platillo); //Output: TypeError<br></ins>
+                        </p>
+                        <h4>Reglas para las variables:</h4>
+                        <p>
+                            Las reglas para construir nombres para variables (identificadores únicos) son:
+                        </p>
+                        <ul>
+                            <li>
+                                Deben comenzar con una letra, pueden comenzar con $ y _, pero nunca con números.
+                            </li>
+                            <li>
+                                Pueden contener letras, dígitos, guiones bajos y signos de dólar (excepto el signo de
+                                ampersand).
+                            </li>
+                            <li>
+                                Distinguen entre mayúsculas y minúsculas (z y Z son variables diferentes).
+                            </li>
+                            <li>
+                                No se pueden usar palabras reservadas de JS como nombres.
+                            </li>
+                        </ul>
+                        <h4>Operadores aritméticos:</h4>
+                        <p>
+                            JavaScript tiene un amplio conjunto de operadores, entre los que se incluyen operadores
+                            aritméticos, lógicos, bit a bit y de asignación, así como algunos operadores varios. Estos
+                            permiten realizar cálculos complejos y tomar decisiones lógicas en función de comparaciones
+                            y
+                            otros tipos de condiciones.
+                        </p>
+                        <p>
+                            Los operadores aritméticos estándar son:
+                        </p>
+                        <ul>
+                            <li>
+                                Adición o suma (+)
+                            </li>
+                            <li>
+                                Sustracción o resta (-)
+                            </li>
+                            <li>
+                                Multiplicación (*)
+                            </li>
+                            <li>
+                                División (/)
+                            </li>
+                            <li>
+                                Incremento (++)
+                            </li>
+                            <li>
+                                Decremento (--)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contenido2">
+                    <h3>Ideas Claves:</h3>
+                    <div class="texto2">
+                        <ul>
+                            <li>JavaScript se diseñó con una sintaxis similar a C, aunque adopta nombres y convenciones
+                                del lenguaje de programación Java.</li>
+                            <li>Es recomendable usar JavaScript dentro del archivo HTML en lugar de un archivo
+                                aparte.</li>
+                        </ul>
+                    </div>
+
+                    <div class="imagen"><a href="imgsBT1/imag1.JPG" target="blank"><img src="imgsBT1/imag1.JPG"
+                                alt="Programar en JavaScript es divertido" width="410"
+                                title="Programar en JavaScript es divertido"></a>
+                    </div>
+                    <div class="imagen"><a href="imgsBT1/imag2.webp" target="blank"><img src="imgsBT1/imag2.webp"
+                                alt="Brendan Eich, Creador de JS" width="410" title="Brendan Eich, Creador de JS"></a>
+                    </div>
+                    <div class="imagen"><a href="imgsBT1/imag3.JPG" target=" blank"><img src="imgsBT1/imag3.JPG"
+                                alt="Practica con getElelmentById" width="410" title="Practica con getElelmentById"></a>
+                    </div>
+                    <div class="imagen"><a href="imgsBT1/imag4.JPG" target=" blank"><img src="imgsBT1/imag4.JPG"
+                                alt="Practica con el operador aritmetico +" width="410"
+                                title="Practica con el operador aritmetico +"></a>
+                    </div>
+                    <div class="imagen"><a href="imgsBT1/imag5.JPG" target=" blank"><img src="imgsBT1/imag5.JPG"
+                                alt="Reglas de var, let y const" width="410" title="Reglas de var, let y const"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resumen">
+                <h3>Resumen:</h3>
+                <div class="textores">
+                    <p>
+                        JavaScript o abreviado JS, es un lenguaje de programación que a servido para mejorar la interfaz
+                        de usuario en páginas darle más interacción y dinámica, se puede insertar JavaScript ya sea
+                        dentro del documento HTML o en un documento JS aparte. El lenguaje funciona con variables que
+                        contienen información (var, let y const), estas pueden realizar cambios dentro del HTML
+                        obteniendo elementos por su ID y existen los operadores aritméticos para realizar cálculos con
+                        las mismas variables.
+                    </p>
+                </div>
+            </div>
+        </section> <!--Fin de temas-->
+
+        <!--Inicio de Temas 2-->
+        <section id="Temas2_1">
+
+            <div class="subtitulo">
+                <h2>Dia 2: 14 de agosto de 2024</h2>
+            </div>
+
+            <div class="contenidos">
+
+                <div class="contenido1">
+                    <h3>Notas de Clase:</h3>
+                    <div class="texto1">
+                        <h4>Funciones:</h4>
+                        <p>
+                            Las funciones son uno de los pilares de JS, es un procedimiento en JS o conjunto de
+                            sentencias
+                            que realizan una tarea o calculan un valor. Para usar una función debe declararla en algún
+                            lugar
+                            y se ejecuta cuando “algo” la llama, la sintaxis para declarar funciones en JS es:
+                        </p>
+                        <p>
+                            <ins>
+                                function nombre([param…]){
+                                Instrucciones
+                                }
+                            </ins>
+                        </p>
+                        <p>
+                            Cuando ocurre un evento (un usuario hace clic en un botón)
+                        </p>
+                        <p>
+                            <ins>
+                                &#60;button type=”button” onclick=”miFuncion()”&#62;Click aquí&#60;/button&#62;
+                            </ins>
+                        </p>
+                        <p>
+                            Cuando se invoca desde el codigo JavaScript
+                        </p>
+                        <p>
+                            <ins>
+                                document.getElementById(“demo”).innerHTML = “Latemperatura es” + toCelsius(77) +
+                                “Celsius”;
+                            </ins>
+                        </p>
+                        <p>
+                            Automaticamente invocado
+                        </p>
+                        <p>
+                            <ins>
+                                function myFunction(p1,p2) { <br>
+                                return p1*p2;
+                                }
+                            </ins>
+                        </p>
+                        <h4>Tipos de datos principales:</h4>
+                        <p>
+                            Los tipos de datos principales (primitivos) de JavaScript son:
+                        </p>
+                        <ul>
+                            <li>
+                                <b>Cadena (string):</b>
+                                Está formado por una cadena de cero o más caracteres Unicode (letras, dígitos y signos
+                                de puntuación), se usan para representar texto en JS.
+                            </li>
+                            <li>
+                                <b>Números (number):</b>
+                                No distinguen entre valores enteros y de punto flotante, un número en JS puede ser
+                                cualquiera de ellos (internamente JavaScript representa todos los números como valores
+                                de punto flotante). Los
+                                valores enteros pueden ser números enteros positivos, números enteros negativos y 0.
+                            </li>
+                            <li>
+                                <b>Booleano (boolean)</b>
+                                Mientras que los de tipo cadena pueden tener un número ilimitado de valores diferentes,
+                                este
+                                solo puede tener dos (true y false), es decir, que especifica si una condición es
+                                verdadera o no.
+                            </li>
+                        </ul>
+                        <h4>Eventos:</h4>
+                        <p>
+                            Un evento en HTML puede ser algo que hace el navegador o el usuario, JavaScript puede
+                            reaccionar
+                            en estos eventos:
+                        </p>
+                        <ul>
+                            <li>
+                                <b>Onchange: </b>Un elemento HTML ha sido cambiado.
+                            </li>
+                            <li>
+                                <b>Onclick: </b>El usuario hace click en un element HTML.
+                            </li>
+                            <li>
+                                <b>Onmouseover: </b>El usuario mueve el mouse sobre un element HTMl.
+                            </li>
+                            <li>
+                                <b>Onmouseout: </b>El usuario aleja el mouse de un element HTML.
+                            </li>
+                            <li>
+                                <b>Onkeydown: </b>El usuario presiona una tecla.
+                            </li>
+                            <li>
+                                <b>Onload: </b>El navegador termina de cargar la pagina.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contenido2">
+                    <h3>Ideas Claves:</h3>
+                    <div class="texto2">
+                        <ul>
+                            <li>El tipo de dato string se usa para representar texto en JavaScript.</li>
+                            <li>Los valores enteros pueden ser números enteros positivos, negativos o incluso 0.</li>
+                            <li>Un valor booleano es un valor de validez, especifica si una condición es verdadera o
+                                falsa.</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="imagen"><a href="imgsBT1/imag6.png" target=" blank"><img src="imgsBT1/imag6.png"
+                                alt="Practica con funciones y operadores aritmeticos" width="410"
+                                title="Practica con funciones y operadores aritmeticos"></a>
+                    </div>
+                    <div class="imagen"><a href="imgsBT1/imag7.png" target=" blank"><img src="imgsBT1/imag7.png"
+                                alt="Como funcionan los eventos y las funciones" width="410"
+                                title="Como funcionan los eventos y las funciones"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resumen">
+                <h3>Resumen:</h3>
+                <div class="textores">
+                    <p>
+                        Dentro de JavaScript se manejan funciones, estas son las encargadas de realizar alguna acción
+                        dentro del HTML al ser ejecutadas con algún evento hecho por el usuario o dentro de la misma
+                        página. Existen tres tipos de datos, estos son los que manejan números enteros, cadenas de
+                        caracteres y booleano, estas son las que manejan cierto o falso. Los eventos son acciones que
+                        puede hacer el usuario o el navegador dentro de la página, por ejemplo, al hacer click en algo o
+                        al mover el cursor, etc.
+                    </p>
+                </div>
+            </div>
+        </section> <!--Fin de temas-->
+
+        <!--Inicio de Temas 3-->
+        <section id="Temas3_1">
+
+            <div class="subtitulo">
+                <h2>Dia 3: 16 de agosto de 2024</h2>
+            </div>
+
+            <div class="contenidos">
+
+                <div class="contenido1">
+                    <h3>Notas de Clase:</h3>
+                    <div class="texto1">
+                        <h4>DOM (Document Object Model):</h4>
+                        <p>
+                            El modelo de objetos de document (DOM) del W3C es una plataforma y una interfaz de lenguaje
+                            neutral que permite que los programas y los scripts accedan y actualicen dinámicamente el
+                            contenido, la estructura y el estilo de un documento.
+                        </p>
+                        <p>
+                            Cuando se carga una página web, el navegador crea un modelo de objeto de un documento de la
+                            página. Con el Dom, los programadores pueden construir documentos, navegar por su estructura
+                            y
+                            añadir, modificar o eliminar elementos y contenido. Se puede acceder a casi cualquier
+                            elemento
+                            que se encuentre en un documento HTML.
+                        </p>
+                        <P>
+                            EL HTML DOM es un modelo de objetos estándar y una interfaz de programación para HTML que
+                            define:
+                        </P>
+                        <ul>
+                            <li>Los elementos HTML como objetos.</li>
+                            <li>Las propiedades de todos los elementos HTML.</li>
+                            <li>Los métodos para acceder a todos los elementos HTML.</li>
+                            <li>Los eventos para todos los elementos HTML.</li>
+                        </ul>
+                        <p>
+                            DOM significa Document Object Model, que en español seria Modelo de Objetos del Documento.
+                            Es una interfaz que implementan los navegadores para poder interactuar con los elementos
+                            HTML.
+                        </p>
+                        <ol>
+                            <li><b>Conversión:</b> el navegador lee los bytes sin procesar del HTML del disco o de la
+                                red y los traduce
+                                en caracteres individuales según la codificación especificada del archivo (por ejemplo,
+                                UTF-8).</li>
+                            <li><b>Conversión en tokens:</b> el navegador convierte cadenas de caracteres en tokens
+                                diferentes
+                                especificados por el estándar W3C HTML5; por ejemplo &#60;html&#62;, &#60;body&#62; y
+                                otras cadenas entre paréntesis angulares.
+                                Cada token tiene un significado especial y unconjunto de reglas propio.</li>
+                            <li><b>Lexicalización:</b> los tokens emitidos se convierten en “objetos” que definen sus
+                                propiedades y
+                                reglas.</li>
+                            <li><b>Construcción del DOM: </b>Por último, los objetos creados se vinculan en una
+                                estructura de datos
+                                en forma de árbol que muestra las relaciones entre objetos primarios y secundarios
+                                definidas
+                                en el HTML original.</li>
+                        </ol>
+                        <p>
+                            El resultado final de todo este proceso es el Document Object Model (DOM), que el navegador
+                            usa para todos los procesamientos de la página.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contenido2">
+                    <h3>Ideas Claves:</h3>
+                    <div class="texto2">
+                        <ul>
+                            <li>El DOM está definido y administrado por
+                                el
+                                W3C, por lo que los distintos navegadores simplemente aplican las especificaciones del
+                                World
+                                Wide Web Consortium, para dar soporte al DOM en sus aplicaciones.</li>
+                            <li>El HTML es un estándar sobre cómo obtener, cambiar, agregar o eliminar elementos HTML.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="imagen"><a href="imgsBT1/imag8.png" target=" blank"><img src="imgsBT1/imag8.png"
+                                alt="Pequeno diagrama de DOM y HTML" width="410"
+                                title="Pequeno diagrama de DOM y HTML"></a>
+                    </div>
+                    <div class="imagen"><a href="imgsBT1/imag9.png" target=" blank"><img src="imgsBT1/imag9.png"
+                                alt="Diagrama de flujo de DOM" width="410" title="Diagrama de flujo de DOM"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resumen">
+                <h3>Resumen:</h3>
+                <div class="textores">
+                    <p>
+                        El DOM (Modelo de Objetos del Documento) es una interfaz que permite a los programas acceder y
+                        actualizar el contenido, la estructura y el estilo de una página web. Al cargar una página, el
+                        navegador crea un modelo del documento, permitiendo modificar y gestionar los elementos HTML.
+                        <br>
+                        El HTML DOM define los elementos HTML como objetos, sus propiedades, métodos y eventos. El
+                        proceso de creación del DOM convierte el HTML en una estructura de árbol que muestra las
+                        relaciones entre los elementos del documento.
+
+                    </p>
+                </div>
+            </div>
+        </section> <!--Fin de temas-->
+
+        <!--Inicio de Temas 4-->
+        <section id="Temas4_1">
+
+            <div class="subtitulo">
+                <h2>Dia 4: 19 de agosto de 2024</h2>
+            </div>
+
+            <div class="contenidos">
+
+                <div class="contenido1">
+                    <h3>Notas de Clase:</h3>
+                    <div class="texto1">
+                        <h4>DOM y la manipulación de elementos HTML</h4>
+                        <p>
+                            Para poder manipular los elementos HTML con JS, primero debemos encontrarlos, existen
+                            diferentes formas para hacerlo:
+                        </p>
+                        <ul>
+                            <li>
+                                <b>Encontrarlos por su ID:</b>
+                                <p>
+                                    Con el método getElementById() encuentra al elemento que tiene el id especificado en
+                                    el
+                                    paréntesis, este es uno de los mas comunes en HTML DOM y se usa casi cada vez que se
+                                    desea
+                                    manipular u obtener información de un elemento en su documento. Si no hay elementos
+                                    con el id
+                                    especificado, devuelve null, ademas de que un id debe ser único en un archivo HTML,
+                                    no pueden
+                                    existir mas de uno, de ser asi, devolvería el primer elemento encontrado en el
+                                    código fuente.
+                                </p>
+                                <p><ins>&#60;p&#62; id=”párrafo”>Este es un párrafo &#60;/p&#62;</ins></p>
+                                <p><ins>document.getElementById(“párrafo”).style.color=”green”;</ins></p>
+                            </li>
+                            <li>
+                                <b>Encontrarlos por su nombre de clase:</b>
+                                <p>
+                                    Con el método getElementsByClassName() devuelve una colección de todos los elementos
+                                    en el
+                                    documento con el nombre de clase especificado, como un objeto HTMLCollection (lista
+                                    de
+                                    elementos).
+                                    El objeto HTMLCollection representa una colección de nodos. Se puede acceder a los
+                                    nodos por
+                                    números de índice que comienza en 0.
+                                </p>
+                                <p><ins>document.getElementsByClassName(“cuadro”)[3].style.backgroundColor=”green”;</ins>
+                                </p>
+                                <p><ins>document.getElementsByClassName(“cuadro”)[1].style.backgroundColor=”darkred”;</ins>
+                                </p>
+                            </li>
+                            <li>
+                                <b>Encontrarlos por su nombre de etiqueta:</b>
+                                <p>
+                                    El método getElementsByTagName() devuelve una colección de todos los elementos en el
+                                    documento
+                                    con el nombre de etiqueta especificado, como un objeto HTMLCollection. Con el valor
+                                    del
+                                    parámetro “*” devuelve todos los elementos en el documento. Usando la propiedad de
+                                    lenght del
+                                    objeto HTMLCollection para determinar la cantidad de elementos con el nombre de
+                                    etiqueta
+                                    especificado, luego puede recorrer todos los elementos y extraer la información que
+                                    desee.
+                                </p>
+                                <p><ins>document.getElementsByTagName(“h1”)[2].style.color=”darkgreen”;</ins></p>
+                            </li>
+                            <li>
+                                <b>Encontrarlos por su selector CSS:</b>
+                                <p>
+                                    En este caso se usa el método querySelector(), que devuelve el primer elemento que
+                                    coincide con
+                                    un selector CSS especificado en el documento. Si el selector coincide con una “id”
+                                    en el
+                                    documento que se usa varias veces (hay que tener en cuenta que un “id” debe ser
+                                    único dentro de
+                                    una pagina y no debe usarse mas de una vez), devuelve el primer elemento
+                                    coincidente. <br>
+                                    Este solo devuelve el primer elemento que coincide con los selectores especificados.
+                                    Para
+                                    devolver todas las coincidencias es mejor utilizar el método querySelectorAll() en
+                                    su lugar.
+                                </p>
+                                <p><ins>document.querySelector(‘#id1’).style.color=”darkred”;<br>
+                                        document.querySelector(‘#prueba .rule’).style.color=”green”;<br>
+                                        document.querySelector(‘#prueba #id3.rule’).style.color=”green”;<br>
+                                        document.querySelector(‘#prueba .rule + .rule’).style.color=”blue”;<br>
+                                        document.querySelector(‘#prueba .rule[title^=Am]’).style.color=”yellow”;</ins>
+                                </p>
+                                <p>
+                                    El método querySelectorAll() devuelve todos los elementos del documento que
+                                    coinciden con un
+                                    selector “id” especificado, como un objeto NodeList estatico.
+                                </p>
+                                <p><ins>var x = document.querySelectorAll(‘h2, p, h1’).lenght; <br>
+                                        document.querySelectorAll(“.cuadro3”)[2].style.backgroundColor=”green”;</ins>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contenido2">
+                    <h3>Ideas Claves:</h3>
+                    <div class="texto2">
+                        <ul>
+                            <li>Los desarrolladores profesionales usan id y clases usualmente.</li>
+                            <li>Cuando se trabaja con varios elementos con su nombre de clase, se utilizan “elements”
+                                dentro
+                                del método.</li>
+                            <li>Al usar clases y etiquetas, no funciona referenciarlos si no tiene un numero de índice
+                                iniciando del 0 (los corchetes para hacer referencia).</li>
+                            <li>El queryselector solo elige al primer elemento con el nombre del selector escrito,
+                                aunque
+                                también se debe utilizar un numero de índice.</li>
+                            <li>El selector query funciona con los selectores de referenciado de CSS ya sea uno solo o
+                                varios separados por comas.</li>
+                        </ul>
+                    </div>
+
+                    <div class="imagen"><a href="imgsBT1/imag10.jpg" target="blank"><img src="imgsBT1/imag10.jpg"
+                                alt="Manipulación de elementos por su ID" width="410"
+                                title="Manipulación de elementos por su ID"></a>
+                    </div>
+                    <div class="imagen"><a href="imgsBT1/imag12.jpg" target="blank"><img src="imgsBT1/imag12.jpg"
+                                alt="Meme del comportamiento del querySelectorAll" width="410"
+                                title="Meme del comportamiento del querySelectorAll"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resumen">
+                <h3>Resumen:</h3>
+                <div class="textores">
+                    <p>
+                        Gracias a JavaScript, podemos encontrar el o los elementos del DOM y modificarlos utilizando el
+                        método correspondiente ya sea a través de su identificación (ID), por su nombre de clase, por la
+                        etiqueta que es el elemento o por un selector de CSS. <br>Es importante saber que al buscar
+                        elementos por su nombre de clase o por la etiqueta, se necesita un numero de índice empezando
+                        del 0 en adelante.
+                    </p>
+                </div>
+            </div>
+        </section> <!--Fin de temas-->
+
+        <!--Inicio de Temas 5-->
+        <section id="Temas5_1">
+
+            <div class="subtitulo">
+                <h2>Dia 5: 21 de agosto de 2024</h2>
+            </div>
+
+            <div class="contenidos">
+
+                <div class="contenido1">
+                    <h3>Notas de Clase:</h3>
+                    <div class="texto1">
+                        <h4>DOM JS y CSS</h4>
+                        <p>
+                            En JavaScript podemos utilizer la propiedad style para manipular el estilo de un element
+                            HTML, o
+                            para crear uno de nuevo. Para cambiar el estilo de un elemento HTML se debe usar la
+                            siguiente
+                            sintaxis:
+                        </p>
+                        <p><ins>document.getElementById(“párrafo”).style.propiedad=”valor o nuevo valor”;</ins></p>
+                        <p>
+                            Por ejemplo:
+                        </p>
+                        <p><ins>document.getElementById(“párrafo”).style.color=”purple”;</ins></p>
+                        <p>
+                            El estilo de un elemento puede ser cambiado mediante un evento:
+                        </p>
+                        <p><ins>&#60;button type”button”
+                                onclick=”document.getElementById(‘párrafo’).style.backgroundColor=’red’;……</ins></p>
+                        <p>
+                            El estilo tambien puede ser cambiado mediante una funcion: Propiedad classList Esta
+                            propiedad devuelve los nombres de clase de un elemento y es muy útil para agregar, eliminar
+                            y alternar clases CSS en un elemento.
+                        </p>
+                        <h4>Propiedad classList</h4>
+                        <p>
+                            La propiedad classList es de solo lectura, sin
+                            embargo, puede modificarla utilizando los siguientes métodos:
+                        </p>
+                        <ul>
+                            <li><b>add</b><br>
+                                La propiedad classList mas el método add agrega uno
+                                o más nombres de clase a un elemento. Si la clase especificada ya existe, la clase no se
+                                agregará
+                                <p><ins>document.getElementById(“cuadro1”).classList.add(“estilo1”, “estilo2”);</ins>
+                                </p>
+                            </li>
+                            <li><b>remove</b><br>
+                                La propiedad classList mas el método remove elimina uno o mas nombres de clase de un
+                                elemento.
+                                Eliminar una clase que no existe, no arroja un
+                                error.
+                                <p><ins>document.getElementById(“cuadro1”).classList.remove(“estilo1”);</ins></p>
+                            </li>
+                            <li><b>toggle</b><br>
+                                La propiedad classList mas
+                                el método toggle alterna entre un nombre de clase para un elemento.<br>
+                                El primer parámetro elimina la clase especificada de un elemento y devuelve falso. Si la
+                                clase no existe, se
+                                agrega al elemento y el valor de retorno es verdadero.<br>
+                                El segundo parámetro opcional es un valor booleano que obliga a agregar o quitar la
+                                clase, independientemente de si ya
+                                existía o no.
+                                <p>
+                                    Eliminar una clase: <br><ins>element.classList.toggle(“classToRemove”, false);</ins>
+                                </p>
+                                <p>
+                                    Agregar una clase: <br><ins>element.classList.toggle(“classToAdd”, true);</ins>
+                                </p>
+                                Ejemplo de aplicación:
+                                <p><ins>document.body.classList.toggle(‘light-theme’);</ins></p>
+                                <p><ins>document.body.classList.toggle(‘dark-theme’);</ins></p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="contenido2">
+                    <h3>Ideas Claves:</h3>
+                    <div class="texto2">
+                        <ul>
+                            <li>
+                                La propiedad classList no es
+                                soportada en IE9 y versiones anteriores.
+                            </li>
+                            <li>
+                                La especificidad al agregar estilo en JS es mayor que hacerlo en CSS, considerándolo
+                                como estilo en línea (como si usaras la etiqueta style dentro de html).
+                            </li>
+                            <li>
+                                Usar style en JS para agregar una lista de propiedades no es eficiente, sin embargo, no
+                                hay errores.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="imagen"><a href="imgsBT1/imag11.jpg" target="blank"><img src="imgsBT1/imag11.jpg"
+                                alt="Formas de agregar, quitar o alternar clases" width="410"
+                                title="Formas de agregar, quitar o alternar clases"></a>
+                    </div>
+                    <div class="imagen"><a href="imgsBT1/imag13.png" target="blank"><img src="imgsBT1/imag13.png"
+                                alt="classList.toggle funciona para alternar estilos de elementos" width="410"
+                                title="classList.toggle funciona para alternar estilos de elementos"></a>
+                    </div>
+                    <div class="imagen"><a href="imgsBT1/imag14.JPG" target="blank"><img src="imgsBT1/imag14.JPG"
+                                alt="Explicacion de como funciona classList.toggle" width="410"
+                                title="Explicacion de como funciona classList.toggle"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resumen">
+                <h3>Resumen:</h3>
+                <div class="textores">
+                    <p>
+                        Se puede hacer modificaciones al estilo de los elementos de un documento HTML o bien, agregarles
+                        uno a través de JavaScript, estas pueden realizarse por medio de un evento que puede realizar el
+                        navegador, la página por si sola o el mismo usuario. <br>La propiedad classList permite agregar,
+                        remover o alternar estilos de los elementos del documento HTML según el nombre de clase en el
+                        que se especifique dentro de JS.
+                    </p>
+                </div>
+            </div>
+        </section> <!--Fin de temas-->
+
+        <!--Inicio de Temas 6-->
+        <section id="Temas6_1">
+
+            <div class="subtitulo">
+                <h2>Dia 6: 23 de agosto de 2024</h2>
+            </div>
+
+            <div class="contenidos">
+
+                <div class="contenido1">
+                    <h3>Notas de Clase:</h3>
+                    <div class="texto1">
+                        <h4>Eventos:</h4>
+                        <p>
+                            El HTML DOM le permite ejecutar codigo cuando ocurre un evento, el navegador genera eventos
+                            cuando “suceden cosas” a elementos HTML.
+                        </p>
+                        <ul>
+                            <li><b>onclick:</b> Al hacer click con el mouse.</li>
+                            <li><b>onbclick:</b> Al hacer doble click con el mouse.</li>
+                            <li><b>onmouseover:</b> Al colocar el mouse sobre un elemento.</li>
+                            <li><b>onmouseout:</b> Al alejar el mouse de un elemento.</li>
+                            <li><b>onload:</b> Cuando una pagina web se ha cargado.</li>
+                            <li><b>onkeydown:</b> Al presionar una tecla.</li>
+                            <li><b>onscroll:</b> Al hacer scroll en la pagina.</li>
+                        </ul>
+                        <h4>addEventListener()</h4>
+                        <p>
+                            El método <b>addEventListener()</b> adjuntar un controlador de eventos al elemento
+                            especificado. La
+                            sintaxis para este método es la siguiente:
+                        </p>
+                        <p><ins>elemento.addEventListener(evento, función…)</ins></p>
+                        <p>
+                            El método <b>removeEventListener()</b> se puede usar para eliminar un controlador de eventos
+                            que se
+                            haya adjuntado con el método addEventListener().
+                        </p>
+                        <p>
+                            El método <b>document.addEventListener()</b> se usa para adjuntar un controlador de eventos
+                            al
+                            documento HTML, este método no es soportado en IE8 y versiones anteriores. Para hacer
+                            referencia
+                            al evento en estos métodos no se usa el prefijo “on”, por ejemplo, use “click” en lugar de
+                            “onclick”.
+                        </p>
+                        <h4>Declaración condicional:</h4>
+                        <p>
+                            Una declaración condicional se usa para determinar el flujo del programa basado en una
+                            condición. Muy a menudo, cuando escribe código, se desea realizar diferentes acciones para
+                            diferentes decisiones. Para hacer estos se pueden usar sentencias condicionales en el
+                            código.
+                        </p>
+                        <ul>
+                            <li><b>If:</b> para especificar un bloque de código para ejecutarse, si una condición
+                                especifica es
+                                verdadera.</li>
+                            <li><b>Else:</b> para especificar un bloque de código para ser ejecutado, si la misma
+                                condición es falsa.
+                            </li>
+                        </ul>
+                        <h4>Operadores de comparación:</h4>
+                        <p>
+                            Los operadores de comparación se utilizan en declaraciones lógicas para determinar la
+                            igualdad o
+                            diferencia entre variables o valores.
+                        </p>
+                        <ul>
+                            <li>
+                                <b>== (Igualdad)</b><br>Compara dos valores para verificar si son iguales, sin
+                                considerar el tipo de dato.
+                            </li>
+                            <li>
+                                <b>=== (Igualdad estricta)</b><br>Compara dos valores y sus tipos de dato. Solo devuelve
+                                true si ambos son iguales en valor y tipo.
+                            </li>
+                            <li>
+                                <b>!= (Diferente)</b><br> Verifica si dos valores son diferentes sin considerar el tipo
+                                de dato.
+                            </li>
+                            <li>
+                                <b>!== (Diferente estricto)</b><br> Verifica si dos valores son diferentes considerando
+                                el tipo de dato.
+                            </li>
+                            <li>
+                                <b>&#62; (Mayor que)</b><br> Verifica si el valor de la izquierda es mayor que el de la
+                                derecha.
+                            </li>
+                            <li>
+                                <b>&#60; (Menor que)</b><br> Verifica si el valor de la izquierda es menor que el de la
+                                derecha.
+                            </li>
+                            <li>
+                                <b>&#62;= (Mayor o igual que)</b><br> Verifica si el valor de la izquierda es mayor o
+                                igual que el de la derecha.
+                            </li>
+                            <li>
+                                <b>&#60;= (Menor o igual que)</b><br> Verifica si el valor de la izquierda es menor o
+                                igual que el de la derecha.
+                            </li>
+                        </ul>
+                        <p><ins>if (edad >= 18){<br>
+                                document.getElementById(“párrafo”).innerText = “Eres mayor de edad”;<br>
+                                } else {<br>
+                                document.getElementById(“párrafo”).innerText = “Eres menor de edad”;<br>
+                                }
+                            </ins></p>
+                        <p>
+                            Las declaraciones else if en JavaScript permiten evaluar multiples condiciones
+                            secuencialmente. Esto es útil cuando se tienen más de dos posibles situaciones que manejar
+                            en el código.
+                        </p>
+                        <p>
+                            Si la condición es verdadera, entonces ejecuta el bloque de código
+                            correspondiente y se salta al resto de las condiciones. Por otra parte, si es falsa, se pasa
+                            a la siguiente condición y asi sucesivamente hasta llegar al bloque final que sería else.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contenido2">
+                    <h3>Ideas Claves:</h3>
+                    <div class="texto2">
+                        <ul>
+                            <li>
+                                JavaScript en si es una programacion muy basica.
+                            </li>
+                            <li>
+                                mouseover ya no se utiliza actualmente, no existe en el diseño responsivo.
+                            </li>
+                            <li>
+                                Innertext funciona para agregar puro texto, no funcionan comandos como Innerhtml
+                                &#60;b&#62;
+                            </li>
+                            <li>
+                                No usar el prefijo “on” en el nombre del evento al usar un EventListener() (por ejemplo,
+                                “click” en lugar de “onclick”).
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="imagen"><a href="imgsBT1/imag15.png" target="blank"><img src="imgsBT1/imag15.png"
+                                alt="Eventos con la sintaxis que se usa y como funcionan" width="410"
+                                title="Eventos con la sintaxis que se usa y como funcionan"></a>
+                    </div>
+                    <div class="imagen"><a href="imgsBT1/imag16.png" target="blank"><img src="imgsBT1/imag16.png"
+                                alt="Ejemplo de declaracion condicional" width="410"
+                                title="Ejemplo de declaracion condicional"></a>
+                    </div>
+                    <div class="imagen"><a href="imgsBT1/imag17.png" target="blank"><img src="imgsBT1/imag17.png"
+                                alt="Uso de EventListener para ejecutar un evento con un boton" width="410"
+                                title="Uso de EventListener para ejecutar un evento con un boton"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resumen">
+                <h3>Resumen:</h3>
+                <div class="textores">
+                    <p>
+                        Los eventos son acciones o sucesos que hace el navegador o el usuario y generan cambios a los
+                        elementos HTML, ya sea hacer click en algo, mover el cursor, al presionar una tecla en
+                        específico, etc. Existen los controladores de eventos (EventListener()), los cuales al
+                        combinarlo con add, este agrega un evento, con remove se borran. <br>Algo que se ha visto en
+                        fundamentos de programación son las declaraciones condicionales y los diferentes operadores de
+                        comparación, sirven para verificar si se cumple una condición especificada para ejecutar un
+                        evento, si no, entonces no hace nada o realiza otra acción.
+                    </p>
+                </div>
+            </div>
+        </section> <!--Fin de temas-->
+
+        <!--Inicio de Temas 7-->
+        <section id="Temas7_1">
+
+            <div class="subtitulo">
+                <h2>Dia 7: 26 de agosto de 2024</h2>
+            </div>
+
+            <div class="contenidos">
+
+                <div class="contenido1">
+                    <h3>Notas de Clase:</h3>
+                    <div class="texto1">
+                        <h4>Viewport:</h4>
+                        <p>
+                            El viewport o ventana grafica es el área visible del usuario de una página web. Varía según
+                            el
+                            dispositivo y será más pequeña en un Smartphone que en la computadora.
+                        </p>
+                        <p>
+                            Antes de las tabletas y los teléfonos móviles, las páginas web se diseñaban solo para
+                            pantallas
+                            de computadora y era común que las páginas web tuvieran un diseño estático y un tamaño fijo.
+                            Luego cuando comenzamos a navegar por internet utilizando tabletas y teléfonos móviles, las
+                            páginas web de tamaño fijo eran demasiado grandes para ajustarse a la ventana gráfica.
+                        </p>
+                        <p>
+                            Para solucionar esto, los navegadores en esos dispositivos redujeron la página web completa
+                            para
+                            ajustarse a la pantalla.
+                            Los usuarios están acostumbrados a desplazar sitios web verticalmente tanto en dispositivos
+                            de
+                            escritorio como móviles, pero no horizontalmente. Por lo tanto, si el usuario se ve obligado
+                            a
+                            desplazarse horizontalmente o alejarse, para ver toda la página web, así se obtiene una
+                            experiencia de usuario pobre.
+                        </p>
+                        <p>
+                            HTML5 introdujo un método para permitir que los diseñadores web tomen el control de la
+                            ventana
+                            gráfica, a través de la etiqueta
+                            <b>&#60;meta&#62;</b>. Un elemento de vista &#60;meta&#62; le da al navegador instrucciones
+                            sobre cómo controlar las dimensiones y la escala de la
+                            página.
+                        </p>
+                        <p><ins>&#60;meta name=”viewport” content=”width, initial-scale=1.0”&#62;</ins></p>
+                        <p>
+                            La parte de = device-width establece el ancho de la página para seguir el ancho de pantalla
+                            del
+                            dispositivo (que variara dependiendo del dispositivo).
+                            La parte de la escala inicial =1.0 establece el nivel de zoom inicial cuando el navegador
+                            carga
+                            la página por primera vez.
+                        </p>
+                        <h4>
+                            Media Queries:
+                        </h4>
+                        <p>
+                            Las medias queries son un módulo de CSS3 que adapta la representación del contenido a las
+                            características de un dispositivo. Se convirtió en un estándar recomendado por la W3C en
+                            junio
+                            de 2012 y es un principio básico del diseño web adaptativo.
+                        </p>
+                        <p>
+                            Las media queries se esbozaron por primera vez en la propuesta inicial de CSS de Hakon Wium
+                            Lie
+                            en 1994, pero no se convirtió en parte de CSS1. La recomendación HTML4 de 1997 muestra un
+                            ejemplo de cómo podría agregarse en el futuro.
+                        </p>
+                        <p>
+                            En el 200, la W3C comenzó a trabajar en las media queries y también en otro esquema para el
+                            soporte de varios dispositivos: CC/PP (Composite Capability/Preference Profiles). Las 2
+                            acciones
+                            estaban orientadas al mismo problema, pero CC/PP es centrado en el servidor, mientras los
+                            Media
+                            Queries están centrados en el cliente.
+                        </p>
+                        <h4>@media</h4>
+                        <p>
+                            CSS2 introdujo tipos de medios. La regla @media, introducida en CSS2, hizo posible definir
+                            diferentes reglas de estilo para diferentes tipos de medios. Se podían definir reglas de
+                            estilo
+                            para computadoras impresoras, impresoras, dispositivos de mano, televisiones, etc.
+                        </p>
+                        <p>
+                            Desafortunadamente, estos tipos de medios nunca recibieron mucho soporte por parte de los
+                            dispositivos aparte del tipo de medios de impresión. CSS3 introdujo media queries que
+                            extendieron la idea de los tipos de media de CSS2 en lugar de buscar un tipo de dispositivo,
+                            analizan la capacidad del dispositivo.
+                        </p>
+                        <p>
+                            Las medias queries se pueden utilizar para verificar muchas cosas, como ancho y alto de la
+                            ventana gráfica, ancho y alto del dispositivo, orientación del dispositivo (horizontal o
+                            vertical) y la resolución.
+                            El uso de media queries es una técnica popular para entregar una hoja de estilo
+                            personalizada
+                            para computadoras de escritorio, computadoras portátiles, tabletas y teléfonos móviles
+                            (IPhone y
+                            Android).
+                        </p>
+                        <p><ins>
+                                @media screen and (max-width: 768px){<br>
+                                .main-sec {<br>
+                                width: 100%;<br>
+                                margin-left: 0;<br>
+                                }<br>
+                                .foto {<br>
+                                margin-left: 3%;<br>
+                                }<br>
+                                .texto{<br>
+                                margin-left: 3%;<br>
+                                padding: 10px;<br>
+                                }<br>
+                                }
+                            </ins></p>
+                        <h4>Soporte del navegador:</h4>
+                        <p>Estas son las versiones de navegadores que son compatibles con la regla media.</p>
+                        <ul>
+                            <li>Chrome: 21.0</li>
+                            <li>Explore: 9.0</li>
+                            <li>Firefox: 3.5</li>
+                            <li>Safari: 4.0</li>
+                            <li>Opera: 9.0</li>
+                        </ul>
+                        <h4>Tipos de @media:</h4>
+                        <ul>
+                            <li><b>all:</b> Para todos los dispositivos de tipo de medios.</li>
+                            <li><b>print:</b> Para impresoras</li>
+                            <li><b>screen:</b> Para pantallas de ordenador, tabletas, teléfonos inteligentes, etc.</li>
+                            <li><b>speech:</b> Se utiliza para lectores de pantalla que “lee” la página en voz alta.
+                            </li>
+                        </ul>
+                        <p>@media queries según tamaños de pantallas:</p>
+                        <li><b>Computadora de escritorio:</b> Estilo normal (común)</li>
+                        <li><b>Laptop y tablet horizontal:</b> @media screen and (max width: 1024px) {}</li>
+                        <li><b>Tablet vertical y smartphone horizontal:</b> @media screen and (max width: 720px) {}</li>
+                        <li><b>Smartphone vertical:</b> @media screen and (max width: 480px) {}</li>
+                    </div>
+                </div>
+
+                <div class="contenido2">
+                    <h3>Ideas Claves:</h3>
+                    <div class="texto2">
+                        <ul>
+                            <li>El primer borrador público para Media Queries fue publicado en 2001, y la especificación
+                                se
+                                convirtió en una recomendación de la W#C en 2012 después que los navegadores le dieran
+                                soporte.</li>
+                            <li>Viewport va medir dependiendo de la pantalla del cliente (del dispositivo), es un
+                                problema al trabajar con diseño responsivo.</li>
+                            <li>Las interfaces de páginas web miden 1366px en pantalla computadora y 400-480px en
+                                teléfono de ancho.</li>
+                            <li>Revisar que este bien escrita la etiqueta viewport y tener cuidado de escribir sobre
+                                ella, si es modificado entonces ya no sirven.</li>
+                            <li>Cualquier elemento más grande que la pantalla del dispositivo, genera un scroll de
+                                izquierda a derecha.</li>
+                            <li>En el software de Visual Studio Code si se agrega viewport automáticamente mientras que
+                                en Brackets no, hay que escribirla.</li>
+                        </ul>
+                    </div>
+
+                    <div class="imagen"><a href="imgsBT1/imag18.png" target="blank"><img src="imgsBT1/imag18.png"
+                                alt="Comparacion de una pagina con y sin viewport" width="410"
+                                title="Comparacion de una pagina con y sin viewport"></a>
+                    </div>
+                    <div class="imagen"><a href="imgsBT1/imag19.jpg" target="blank"><img src="imgsBT1/imag19.jpg"
+                                alt="tamaños de pantallas para diseño responsivo" width="410"
+                                title="tamaños de pantallas para diseño responsivo"></a>
+                    </div>
+                    <div class="imagen"><a href="imgsBT1/imag20.jpg" target="blank"><img src="imgsBT1/imag20.jpg"
+                                alt="Ejemplo de responsividad" width="410" title="Ejemplo de responsividad"></a>
+                    </div>
+                    <div class="imagen"><a href="imgsBT1/imag21.jpg" target="blank"><img src="imgsBT1/imag21.jpg"
+                                alt="Uso de @media" width="410" title="Uso de @media"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resumen">
+                <h3>Resumen:</h3>
+                <div class="textores">
+                    <p>
+                        El viewport es el área visible de una página web que varía dependiendo del dispositivo, las
+                        tabletas y teléfonos, hicieron que los navegadores ajustaran automáticamente las páginas para
+                        que se adaptaran a las pantallas más pequeñas, evitando la necesidad de desplazarse
+                        horizontalmente. HTML5 introdujo la etiqueta “meta” para controlar mejor las dimensiones y la
+                        escala de las páginas. <br>Se utilizan las media queries para adaptar el contenido del HTML a
+                        las
+                        características del dispositivo en el que se abra, siendo un principio básico del diseño web
+                        responsivo.
+                    </p>
+                </div>
+            </div>
+        </section> <!--Fin de temas-->
+
+    </section>
+
+    <footer>
+        <!--Pie de página-->
+        <h3>Derechos de autor:</h3>
+
+        <p>Esta página fue creada por Arthur Davidson, no se permite la reproducción total o parcial de esta
+            página,
+            ni su transmisión en cualquier forma o por
+            cualquier medio (electrónico, mecánico, fotocopia, grabación u otros) sin la autorización previa,
+            contáctenos antes realizar alguna acción con la página. La infracción de dichos derechos puede
+            constituir un delito contra la propiedad.</p>
+
+        <h3>Política de privacidad:</h3>
+
+        <p>En esta página no se recopila datos personales de los visitantes</p>
+
+        <section>
+            <a href="https://www.youtube.com/watch?v=MO_sFd79-ss">Politica de cookies</a>
+            <a href="https://www.youtube.com/watch?v=MO_sFd79-ss">Legales</a>
+            <a href="mailto:padilla.hdz.da02@gmail.com?subject=Pagina web bitácoras" target="_blank">Contacto</a>
+        </section>
+
+    </footer>
+
+
+
+</body>
+
+</html>

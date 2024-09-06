@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Squada+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background-color: #000000b9;
+}
+
+/*/////////////////////////// ENCABEZADO ///////////////////////////////////*/
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color: #2d635c;
+    background-image: url(imgsBT1/header1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+    /*Se supone que sirve para centrar todo*/
+    padding-top: 30px;
+}
+
+/*/////////////////////////// BARRA DE NAVEGACION ///////////////////////////////////*/
+
+.navegacion {
+    width: 100%;
+    height: 65px;
+    background-color: #000000;
+    box-shadow: 0px 0px 25px 0px #2e8d81;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    z-index: 1;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #89eeee;
+    font-family: "Squada One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    width: 200px;
+    height: auto;
+    background-color: #02251aab;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.navegacion a:hover {
+    color: #02251aab;
+    background-color: #89ee9d;
+    box-shadow: 0px 5px 25px 8px #3bf5baab;
+    border-radius: 10px;
+    transform: scale(1.2);
+}
+
+.navegacion a:nth-child(8){
+    width: 230px;
+    margin-left: 10%;
+    background-color: #023018;
+    color: #00ff7b;
+}
+
+.navegacion a:hover:nth-child(8){
+    background-color: #1fe07c;
+    color: #02341a;
+}
+
+/*/////////////////////////// SECCIONES (TEMAS) ///////////////////////////////////*/
+
+#secciones {
+    width: 95%;
+    height: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+
+
+.subtitulo {
+    background-color: #02363b;
+    background: linear-gradient(to bottom, #2d6341, #439c75d5);
+    box-shadow: 0px 5px 25px 8px #10322d;
+    border: 1px solid rgb(131, 255, 253);
+    width: 90%;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    
+    
+    margin-left: 5%;
+    padding: 30px;
+}
+
+/*/////////////////////////// CONTENIDOS ///////////////////////////////////*/
+
+.contenidos {
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    padding: 25px;
+    display: flex;
+}
+
+.contenido1 {
+    background-color: #02373b;
+    background: linear-gradient(to bottom, #0e3e38dd, #3e9489);
+    box-shadow: 0px 5px 25px 8px #10322d;
+    border-radius: 10px;
+    width: 70%;
+    height: auto;
+    margin: 10px;
+    padding: 25px;
+}
+
+.texto1 {
+    background-color: rgb(205, 230, 243);
+    border: dashed rgb(3, 89, 88);
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.contenido2 {
+    background-color: #023b3b;
+    background: linear-gradient(to bottom, #0e3e38dd, #3e9489);
+    box-shadow: 0px 5px 25px 8px #10322d;
+    border-radius: 10px;
+    width: 40%;
+    height: auto;
+    margin: 10px;
+    padding: 25px;
+}
+
+.texto2 {
+    background-color: rgb(205, 230, 243);
+    border: dashed rgb(3, 89, 88);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 18px;
+}
+
+/*/////////////////////////// IMAGENES ///////////////////////////////////*/
+
+.imagen {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.imagen img {
+    border: 3px solid rgb(0, 22, 39);
+    box-shadow: 0px 5px 25px 8px #023b2a;
+    border-radius: 10px;
+    filter: brightness(90%);
+    transition: 0.3s;
+}
+
+.imagen img:hover {
+    transform: scale(1.2);
+    filter: brightness(110%);
+}
+
+/*/////////////////////////// RESUMEN ///////////////////////////////////*/
+
+.resumen {
+    background-color: #224f49;
+    background: linear-gradient(to bottom, #124d59, #3e948d);
+    box-shadow: 0px 5px 25px 8px #10322d;
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    margin-left: 5%;
+}
+
+.textores {
+    background-color: rgb(205, 230, 243);
+    border: dashed rgb(3, 89, 88);
+    border-radius: 10px;
+    padding: 18px;
+}
+
+/*/////////////////////////// PIE DE PAGINA ///////////////////////////////////*/
+
+footer {
+    width: 100%;
+    height: auto;
+    color: #bcfff7;
+    background-color: #031412;
+    padding: 30px;
+    float: left;
+}
+
+footer a {
+    text-decoration: none;
+    color: #00ff7b;
+    font-family: "Squada One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px 20px;
+    line-height: 60px;
+    margin: 10px;
+    font-size: 25px;
+    width: 200px;
+    height: auto;
+    background-color: #023018;
+    text-align: center;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #02341a;
+    background-color: #1fe07c;
+    box-shadow: 0px 5px 25px 8px #3bf5baab;
+    border-radius: 10px;
+    transform: scale(1.2);
+}
+
+
+/*/////////////////////////// TITULOS, SUBTITULO Y PARRAFOS///////////////////////////////////*/
+
+h1 {
+    font-family: "Squada One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 160px;
+    color: #ffffff;
+    -webkit-text-stroke: 2px rgb(22, 56, 123);
+}
+
+h2 {
+    color: #cffcfc;
+    font-family: "Squada One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+}
+
+h3 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #70ed97;
+    margin: 10px;
+}
+
+h4 {
+    font-family: "Poetsen One", sans-serif;
+    color: #045468;
+    font-weight: 450;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin: 10px;
+    margin-left: 30px;
+}
+
+p {
+    margin: 10px;
+    margin-left: 15px;
+}
+
+p ins {
+    color: blue;
+    text-decoration: none;
+    background-color: white;
+    padding: 3px;
+}
+
+/*/////////////////////////// TEMAS ///////////////////////////////////*/
+
+[id*="Temas"]{
+    padding: 50px;
+    margin-top: 100px;
+
+}
